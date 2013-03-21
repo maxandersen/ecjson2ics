@@ -24,7 +24,7 @@ for session in data:
         end = datetime.strptime(session["date"] + " " + session["end"], "%Y-%m-%d %H:%M:%S")
     
         event.add('summary', session["title"])
-        event.add('description', session["abstract"])
+        event.add('description', session["abstract"] + " http://www.eclipsecon.org/2013/node/"+session["id"])
         if "room" in session and session["room"] is not None:
             event.add('location', session["room"])
         if "presenter" in session:
