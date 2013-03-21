@@ -13,7 +13,7 @@ Install:
    
 Usage:
 
-curl <sessionurl> | python ecjson2ics.py > eclipsecon2013.ics
+curl {sessionurl} | python ecjson2ics.py > eclipsecon2013.ics
 
 Example result:
    https://dl.dropbox.com/u/558690/eclipsecon2013.ics
